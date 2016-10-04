@@ -49,7 +49,7 @@
               <li role="separator" class="divider"></li>
 
               <li class="dropdown-header">Aide aux devoirs</li>
-              <li><a href="#">Principes</a></li>
+              <li><a href="principe.php">Principes</a></li>
               <li><a href="profs.php">Les "Professeurs"</a></li>
               <li><a href='#'>Les élèves</a></li>
 

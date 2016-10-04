@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <title>Inscription - SchoolTool</title>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <title>Inscription - SchoolTool</title>
 </head>
+
 <body>
 
 
@@ -47,8 +49,8 @@
               <li role="separator" class="divider"></li>
 
               <li class="dropdown-header">Aide aux devoirs</li>
-              <li><a href="#">Principes</a></li>
-              <li><a href="#">Les "Professeurs"</a></li>
+              <li><a href="principe.php">Principes</a></li>
+              <li><a href="profs.php">Les "Professeurs"</a></li>
               <li><a href='#'>Les élèves</a></li>
 
             </ul>
@@ -66,15 +68,15 @@
     </div>
   </nav>
 
-<div class="container">
+  <div class="container">
     <div class="jumbotron">
       <p>Veullez remplir tous les champs ci-dessous afin de procéder a votre inscription.</p>
     </div>
   </div>
 
-<div class="container">
-<form class="navbar-form navbar-left" role="search">
-    <div class="form-group">
+  <div class="container">
+    <form class="navbar-form navbar-left" role="search">
+      <div class="form-group">
         <input type="text" class="form-control" placeholder="Nom">
         <br><br>
         <input type="text" class="form-control" placeholder="Prénom">
@@ -92,13 +94,14 @@
         <input type="text" class="form-control" placeholder="Confirmez votre mail">
         <br><br>
         <input type="text" class="form-control" placeholder="Mot de passe">
-    <br><br>
+        <br><br>
         <button type="submit" class="btn btn-default">Submit</button>
-    </div>
-</form>
-</div>
+      </div>
+    </form>
+  </div>
 
 </body>
+
 </html>
 
 <!-- Scripts -->

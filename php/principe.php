@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
 
-  <link rel="stylesheet" href="../css/devoir.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-  <title>Devoirs - SchoolTool</title>
+  <title>Accueil - SchoolTool</title>
 </head>
 
 <body>
@@ -27,16 +27,16 @@
             
           </button>
 
-        <a class="navbar-brand" id="branding" href="main.php">SchoolTool</a>
+        <a class="navbar-brand" id="branding" href="principe.php">SchoolTool</a>
 
       </div>
       <div id="navbar" class="navbar-collapse collapse">
 
         <ul class="nav navbar-nav">
 
-          <li><a href="main.php">Accueil</a></li>
+          <li class='active'><a href="main.php">Accueil</a></li>
           <li><a href="transport.php">Transport</a></li>
-          <li class='active'><a href="devoir.php">Aide aux devoirs</a></li>
+          <li><a href="devoir.php">Aide aux devoirs</a></li>
 
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fonctionnement<span class="caret"></span></a>
@@ -68,29 +68,28 @@
     </div>
   </nav>
 
-  <div class="container">
+  <div class="container" id='bloc-principe'>
+    
     <div class="jumbotron">
-      <p>Vous bloquez sur un exercice ? Une question par rapport a votre dernier cours de maths ?</p>
-      <p>Avec l'aide au devoirs, vous pourrez apprendre en échangeant avec d'autres personnes expérimentées !</p>
+       <p>Le principe de l'aide aux devoirs est simple.</p>
+       
+      
+      <div class="btn-group" role="group" aria-label="...">
+        <a href="devoir.php" class="btn btn-info" role="button">Accès au cours disponible</a>
+      </div>
     </div>
-  </div>
-
-  <div class="container">
-    <p>Sélectionnez votre niveau d'enseignement dans le menu déroulant ci-dessous : </p>
-    <select class="form-control">
-        <option>Collège</option>
-        <option>Lycée</option>
-        <option>Université</option>
-        <option>Supérieur</option>
-</select>
-  </div>
-
+    
+    <div class='container'>
+      <p>Chaque professeur ou Etudiant souhaitant aider, peut inscrire ses créneaux et matières principales, pour subvenir aux besoins d'un/des jeunes étudiants. </p>
+       <p>L'objectif principal est d'aidé les nombreuses en difficultés sur de nombreuses matières, pour faciliter la réussite de chacun. Nous voulons la réussite pour TOUS</p>
+    </div>
+    
+</div>
 
 
 </body>
 
 </html>
-
 
 <!-- Scripts -->
 
