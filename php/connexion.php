@@ -14,14 +14,14 @@ $req2 = $bdd->prepare('SELECT * FROM admin WHERE email = :pseudo AND mdp = :pass
 $req2->execute(array(
     'pseudo' => $pseudo,
     'pass' => $pass_hache));
-<<<<<<< HEAD
-$resultat2 = $req2->fetch();
-=======
 
 $resultat2 = $req2->fetch();
 
 
->>>>>>> e4575989a7d9156c594a2990d648d9d489760342
+$resultat2 = $req2->fetch();
+
+
+
 if (!$resultat && !$resultat2)
 {
    
@@ -121,11 +121,7 @@ else
 <?php } 
 if(isset($_POST['valider']))
 {
-<<<<<<< HEAD
-=======
 
-
->>>>>>> e4575989a7d9156c594a2990d648d9d489760342
 if (!$resultat && !$resultat2)
 {
     echo 'Mauvaiss identifiant ou mot de passe !';

@@ -34,7 +34,7 @@
 
         <ul class="nav navbar-nav">
 
-          <li class='active'><a href="main.php">Accueil</a></li>
+          <li><a href="main.php">Accueil</a></li>
           <li><a href="transport.php">Transport</a></li>
           <li><a href="devoir.php">Aide aux devoirs</a></li>
 
@@ -51,7 +51,6 @@
               <li class="dropdown-header">Aide aux devoirs</li>
               <li><a href="principe.php">Principes</a></li>
               <li><a href="profs.php">Les "Professeurs"</a></li>
-              <li><a href='#'>Les élèves</a></li>
 
             </ul>
           </li>
@@ -59,15 +58,15 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
-          <li class="active"><a href="connexion.php"><i class="fa fa-user" aria-hidden="true"></i> Mon compte</a></li>
+          <li class="active"><a href="account.php"><i class="fa fa-user" aria-hidden="true"></i> Mon compte</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right visible-sm visible-xs">
-          <li class="active"><a href="connexion.php"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+          <li class="active"><a href="account.php"><i class="fa fa-user" aria-hidden="true"></i></a></li>
         </ul>
       </div>
     </div>
   </nav>
-
+  
   <div class="container" id='bloc-accueil'>
 
     <div class="jumbotron">
