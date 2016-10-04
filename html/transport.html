@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="../js/bootstrap.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <title>Transport</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/transport.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <title>Transport - SchoolTool</title>
 </head>
 
 <body>
+
+  <!--
 <div class="container">
     <ul class="nav nav-pills">
         <li role="presentation" class="active"><a href="main.html">Accueil</a></li>
@@ -18,18 +20,96 @@
         <li role="presentation"><a href="devoir.html">Aide Devoir</a></li>
         <li role="presentation"><a href="#">Qui sommes nous ?</a></li>
     </ul>
-</div>
+  </div>
+  -->
 
-<div class="container">
-    <p class="navbar-text">Voici les offres disponibles, de personnes proposant leur service pour vous simplifier la vie</p>
-</div>
+  <nav class="navbar navbar-default navbar-static-top">
 
-<div class="list-group">
-    <a href="#" class="list-group-item active">
-        <h4 class="list-group-item-heading">trajet Levallois -> Place d'italie</h4>
+    <div class="container">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            
+          </button>
+
+        <a class="navbar-brand" id="branding" href="main.html">SchoolTool</a>
+
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+
+        <ul class="nav navbar-nav">
+
+          <li><a href="main.html">Accueil</a></li>
+          <li class='active'><a href="transport.html">Transport</a></li>
+          <li><a href="devoir.html">Aide aux devoirs</a></li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fonctionnement<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+
+              <li class="dropdown-header">Le transport à l'école</li>
+              <li><a href="#">Comment ça marche ?</a></li>
+              <li><a href="#">Devenir conducteur</a></li>
+
+              <li role="separator" class="divider"></li>
+
+              <li class="dropdown-header">Aide aux devoirs</li>
+              <li><a href="#">Principes</a></li>
+              <li><a href="#">Les "Professeurs"</a></li>
+              <li><a href='#'>Les élèves</a></li>
+
+            </ul>
+          </li>
+          <li><a href='#'>A propos</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Mon compte</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <p>Voici les offres de transport disponibles actuellement</p>
+  </div>
+
+  <div class='container'>
+    <div class="list-group col-md-3">
+      <a href="#" class="list-group-item active">
+        <h4 class="list-group-item-heading">Levallois -> Place d'italie</h4>
         <p class="list-group-item-text">Bonjour, j'emmene mon fils à l'école qui est situé a place d'italie, il me reste 2 places</p>
-    </a>
-</div>
+      </a>
+    </div>
+  </div>
+
+  <div class='container'>
+    <div class="row">
+      <div class="col-sm-3 col-md-3">
+        <div class="thumbnail">
+          <img src="..." alt="...">
+          <div class="caption">
+            <h3>Colombes -> Asnières</h3>
+            <p>Conducteur :</p>
+            <p>Date :</p>
+            <p>Durée :</p>
+            <p><a href="#" class="btn btn-primary" role="button">+ d'infos</a> <a href="#" class="btn btn-default" role="button">Réserver</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
+
 </html>
+
+<!-- Scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
