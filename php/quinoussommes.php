@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <title>Qui sommes nous ? - SchoolTool</title>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <title>Qui sommes nous ? - SchoolTool</title>
 </head>
+
 <body>
 
 
 
-  
+
   <nav class="navbar navbar-default navbar-static-top">
 
     <div class="container">
@@ -49,8 +51,8 @@
               <li role="separator" class="divider"></li>
 
               <li class="dropdown-header">Aide aux devoirs</li>
-              <li><a href="#">Principes</a></li>
-              <li><a href="#">Les "Professeurs"</a></li>
+              <li><a href="principe.php">Principes</a></li>
+              <li><a href="profs.php">Les "Professeurs"</a></li>
               <li><a href='#'>Les élèves</a></li>
 
             </ul>
@@ -67,16 +69,18 @@
       </div>
     </div>
   </nav>
-  
-<div class="container">
-    <br><p>Nous sommes 5 étudiants de l'EPSI Paris. Nous avons monté un projet dans le cadre de notre Workshop.
-<br> Notre objectif principal est de simplifier la vie de nombreux parents et élèves pour s'organiser et réussir l'année scolaire.</p>
-</div>
 
-<div class="container">
+  <div class="container">
+    <br>
+    <p>Nous sommes 5 étudiants de l'EPSI Paris. Nous avons monté un projet dans le cadre de notre Workshop.
+      <br> Notre objectif principal est de simplifier la vie de nombreux parents et élèves pour s'organiser et réussir l'année scolaire.</p>
+  </div>
+
+  <div class="container">
     <img src="../image/epsi.png" style="width:300px;height:220px;">
-</div>
+  </div>
 </body>
+
 </html>
 
 <!-- Scripts -->

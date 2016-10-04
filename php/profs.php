@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
 
-  <link rel="stylesheet" href="../css/devoir.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-  <title>Devoirs - SchoolTool</title>
+  <title>Les Professeurs - SchoolTool</title>
 </head>
 
 <body>
@@ -36,9 +36,9 @@
 
           <li><a href="main.php">Accueil</a></li>
           <li><a href="transport.php">Transport</a></li>
-          <li class='active'><a href="devoir.php">Aide aux devoirs</a></li>
+          <li><a href="devoir.php">Aide aux devoirs</a></li>
 
-          <li class="dropdown">
+          <li class="dropdown active">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fonctionnement<span class="caret"></span></a>
             <ul class="dropdown-menu">
 
@@ -68,29 +68,24 @@
     </div>
   </nav>
 
-  <div class="container">
+  <div class="container" id='bloc-accueil'>
+
     <div class="jumbotron">
-      <p>Vous bloquez sur un exercice ? Une question par rapport a votre dernier cours de maths ?</p>
-      <p>Avec l'aide au devoirs, vous pourrez apprendre en échangeant avec d'autres personnes expérimentées !</p>
+      <p>Découvrez les "professeurs"</p>
     </div>
+
   </div>
 
-  <div class="container">
-    <p>Sélectionnez votre niveau d'enseignement dans le menu déroulant ci-dessous : </p>
-    <select class="form-control">
-        <option>Collège</option>
-        <option>Lycée</option>
-        <option>Université</option>
-        <option>Supérieur</option>
-</select>
-  </div>
 
+  <div class='container'>
+
+
+  </div>
 
 
 </body>
 
 </html>
-
 
 <!-- Scripts -->
 
