@@ -1,4 +1,31 @@
 <!DOCTYPE html>
+<?php 
+// Hachage du mot de passe
+$pass_hache = $_POST['pass'];
+$pseudo = $_POST['pseudo'];
+
+include("bdd.php");
+// Vérification des identifiants
+$req = $bdd->prepare('SELECT * FROM client WHERE email = :pseudo AND mdp = :pass');
+$req->execute(array(
+    'pseudo' => $pseudo,
+    'pass' => $pass_hache));
+
+$resultat = $req->fetch();
+
+if (!$resultat)
+{
+   
+}
+else
+{
+    
+    $_SESSION['id'] = $resultat['id'];
+    $_SESSION['pseudo'] = $pseudo;
+
+}
+
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -67,22 +94,40 @@
     </div>
   </nav>
   
-<div class="container">
+
+<?php if (empty($_SESSION['pseudo']))
+{ ?><div class="container">
     <p class="navbar-text">Merci de remplir tous les champs pour se connecter</p>
 </div>
-
 <div class="container">
-    <form class="navbar-form">
+    <form class="navbar-form" method="post">
         <div class="form-group">
-            <input type="email" class="form-control" placeholder="Email">
+            <input  name="pseudo" class="form-control" placeholder="Email" type="email">
             <br><br>
-            <input type="password" class="form-control" placeholder="Mot de passe">
+            <input type="password" name="pass" class="form-control" placeholder="Mot de passe">
             <br><br>
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" name="valider" class="btn btn-default">Submit</button>
         </div>
     </form>
 </div>
-
+<?php } 
+if (!$resultat)
+{
+    echo 'Mauvais identifiant ou mot de passe !';
+    echo $pass_hache."ddd";
+    echo $pseudo;
+}
+else
+{
+    
+    $_SESSION['id'] = $resultat['id'];
+    $_SESSION['pseudo'] = $pseudo;
+    echo 'Vous êtes connecté !';
+}
+if (isset($_SESSION['pseudo']))
+{
+    echo 'Bonjour ' . $_SESSION['pseudo'];
+}?>
 </body>
 </html>
 
