@@ -27,16 +27,16 @@
             
           </button>
 
-        <a class="navbar-brand" id="branding" href="main.html">SchoolTool</a>
+        <a class="navbar-brand" id="branding" href="maan.php">SchoolTool</a>
 
       </div>
       <div id="navbar" class="navbar-collapse collapse">
 
         <ul class="nav navbar-nav">
 
-          <li class='active'><a href="main.html">Accueil</a></li>
-          <li><a href="transport.html">Transport</a></li>
-          <li><a href="devoir.html">Aide aux devoirs</a></li>
+          <li class='active'><a href="maan.php">Accueil</a></li>
+          <li><a href="transport.php">Transport</a></li>
+          <li><a href="devoir.php">Aide aux devoirs</a></li>
 
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fonctionnement<span class="caret"></span></a>
@@ -44,7 +44,7 @@
 
               <li class="dropdown-header">Le transport à l'école</li>
               <li><a href="#">Comment ça marche ?</a></li>
-              <li><a href="register.html">Devenir conducteur</a></li>
+              <li><a href="register.php">Devenir conducteur</a></li>
 
               <li role="separator" class="divider"></li>
 
@@ -55,14 +55,14 @@
 
             </ul>
           </li>
-          <li><a href='quinoussommes.html'>A propos</a></li>
+          <li><a href='quinoussommes.php'>A propos</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
-          <li class="active"><a href="connexion.html"><i class="fa fa-user" aria-hidden="true"></i> Mon compte</a></li>
+          <li class="active"><a href="connexion.php"><i class="fa fa-user" aria-hidden="true"></i> Mon compte</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right visible-sm visible-xs">
-          <li class="active"><a href="connexion.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+          <li class="active"><a href="connexion.php"><i class="fa fa-user" aria-hidden="true"></i></a></li>
         </ul>
       </div>
     </div>
@@ -75,10 +75,10 @@
     </div>
      
     <div class="btn-group" role="group" aria-label="...">
-      <a href="connexion.html" class="btn btn-default" role="button">Se connecter</a>
+      <a href="connexion.php" class="btn btn-default" role="button">Se connecter</a>
     </div>
     <div class="btn-group" role="group" aria-label="...">
-      <a href="register.html" class="btn btn-success" role="button">S'inscrire</a>
+      <a href="register.php" class="btn btn-success" role="button">S'inscrire</a>
     </div>
     
 </div>
