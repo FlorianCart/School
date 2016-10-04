@@ -50,7 +50,7 @@
 
               <li class="dropdown-header">Aide aux devoirs</li>
               <li><a href="principe.php">Principes</a></li>
-              <li><a href="profs.php">Les "Professeurs"</a></li>
+              <li class="active"><a href="profs.php">Les "Professeurs"</a></li>
               <li><a href='#'>Les élèves</a></li>
 
             </ul>
@@ -71,7 +71,8 @@
   <div class="container" id='bloc-accueil'>
 
     <div class="jumbotron">
-      <p>Découvrez les "professeurs"</p>
+      <h2>Découvrez les "professeurs"</h2>
+      <h4>Ce que nous appellons professeurs, ce sont les personnes étant disponibles pour vous aider sur un cours incompris, un exercice non résolu ou autre chose concernant vos connaissances.</h4>
     </div>
 
   </div>
@@ -79,6 +80,27 @@
 
   <div class='container'>
 
+    <div class="col-md-6">
+      <div class="bordure">
+        <i class="fa fa-map" aria-hidden="true"></i>
+        <span class="titrebloc"><h3>À domicile</h3></span>
+        <p>Le professeur se rend directement chez vous.</p>
+        <p>Convenez ensemble d'une date afin de vous rencontrer directement.</p>
+
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="bordure">
+        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+        <span class="titrebloc"><h3>À distance</h3></span>
+        <p>La distance vous séparant est trop importante ?</p>
+        <p>Effectuez une vidéo-conférence avec un professeur et échangez sans limites.</p>
+
+      </div>
+    </div>
+
+    <a href="devoir.php" class="btn btn-info" role="button">Voir les créneaux disponibles</a>
 
   </div>
 
