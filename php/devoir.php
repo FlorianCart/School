@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="../css/index.css">
+
+  <link rel="stylesheet" href="../css/devoir.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-  <title>Accueil - SchoolTool</title>
+  <title>Devoirs - SchoolTool</title>
 </head>
 
 <body>
@@ -34,9 +34,9 @@
 
         <ul class="nav navbar-nav">
 
-          <li class='active'><a href="main.html">Accueil</a></li>
+          <li><a href="main.html">Accueil</a></li>
           <li><a href="transport.html">Transport</a></li>
-          <li><a href="devoir.html">Aide aux devoirs</a></li>
+          <li class='active'><a href="devoir.html">Aide aux devoirs</a></li>
 
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fonctionnement<span class="caret"></span></a>
@@ -68,57 +68,29 @@
     </div>
   </nav>
 
-  <div class="container" id='bloc-accueil'>
-    
+  <div class="container">
     <div class="jumbotron">
-       <p>Bonjour et bienvenue sur SchoolTool. Le service d'aide à la personne dans le domaine scolaire, pour faciliter le déplacement, et l'apprentissage à chacun.</p>
+      <p>Vous bloquez sur un exercice ? Une question par rapport a votre dernier cours de maths ?</p>
+      <p>Avec l'aide au devoirs, vous pourrez apprendre en échangeant avec d'autres personnes expérimentées !</p>
     </div>
-     
-    <div class="btn-group" role="group" aria-label="...">
-      <a href="connexion.html" class="btn btn-default" role="button">Se connecter</a>
-    </div>
-    <div class="btn-group" role="group" aria-label="...">
-      <a href="register.html" class="btn btn-success" role="button">S'inscrire</a>
-    </div>
-    
-</div>
-    
-    
-  <div class="container" id="reassurance-bloc">
-
-    <div class="col-md-4">
-      <div class="bordure">
-        <span class="fa fa-car" aria-hidden="true"></span>
-        <span class="titrebloc"><h3>Co-voiturage</h3></span>
-        <p>Amenez vos enfants et ceux de vos voisins pour plus de liberté !</p>
-        <button type="button" class="btn btn-info">Trajets Disponibles</button>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="bordure">
-        <span class="fa fa-book" aria-hidden="true"></span>
-        <span class="titrebloc"><h3>Aide aux devoirs</h3></span>
-        <p>Progressez durant votre année scolaire graçe a l'entraide scolaire !</p>
-        <button type="button" class="btn btn-info">Devenir prof ou élève</button>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="bordure">
-        <span class="fa fa-wifi" aria-hidden="true"></span>
-        <span class="titrebloc"><h3>Chez vous ou a distance</h3></span>
-        <p>La distance n'est plus un problème avec la visio-conférence !</p>
-        <button type="button" class="btn btn-info">+ d'infos</button>
-      </div>
-    </div>
-    
   </div>
+
+  <div class="container">
+    <p>Sélectionnez votre niveau d'enseignement dans le menu déroulant ci-dessous : </p>
+    <select class="form-control">
+        <option>Collège</option>
+        <option>Lycée</option>
+        <option>Université</option>
+        <option>Supérieur</option>
+</select>
+  </div>
+
 
 
 </body>
 
 </html>
+
 
 <!-- Scripts -->
 

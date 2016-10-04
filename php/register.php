@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-  <title>Accueil - SchoolTool</title>
+    <title>Inscription - SchoolTool</title>
 </head>
-
 <body>
+
 
   <nav class="navbar navbar-default navbar-static-top">
 
@@ -34,7 +32,7 @@
 
         <ul class="nav navbar-nav">
 
-          <li class='active'><a href="main.html">Accueil</a></li>
+          <li><a href="main.html">Accueil</a></li>
           <li><a href="transport.html">Transport</a></li>
           <li><a href="devoir.html">Aide aux devoirs</a></li>
 
@@ -68,56 +66,39 @@
     </div>
   </nav>
 
-  <div class="container" id='bloc-accueil'>
-    
+<div class="container">
     <div class="jumbotron">
-       <p>Bonjour et bienvenue sur SchoolTool. Le service d'aide à la personne dans le domaine scolaire, pour faciliter le déplacement, et l'apprentissage à chacun.</p>
+      <p>Veullez remplir tous les champs ci-dessous afin de procéder a votre inscription.</p>
     </div>
-     
-    <div class="btn-group" role="group" aria-label="...">
-      <a href="connexion.html" class="btn btn-default" role="button">Se connecter</a>
-    </div>
-    <div class="btn-group" role="group" aria-label="...">
-      <a href="register.html" class="btn btn-success" role="button">S'inscrire</a>
-    </div>
-    
-</div>
-    
-    
-  <div class="container" id="reassurance-bloc">
-
-    <div class="col-md-4">
-      <div class="bordure">
-        <span class="fa fa-car" aria-hidden="true"></span>
-        <span class="titrebloc"><h3>Co-voiturage</h3></span>
-        <p>Amenez vos enfants et ceux de vos voisins pour plus de liberté !</p>
-        <button type="button" class="btn btn-info">Trajets Disponibles</button>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="bordure">
-        <span class="fa fa-book" aria-hidden="true"></span>
-        <span class="titrebloc"><h3>Aide aux devoirs</h3></span>
-        <p>Progressez durant votre année scolaire graçe a l'entraide scolaire !</p>
-        <button type="button" class="btn btn-info">Devenir prof ou élève</button>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="bordure">
-        <span class="fa fa-wifi" aria-hidden="true"></span>
-        <span class="titrebloc"><h3>Chez vous ou a distance</h3></span>
-        <p>La distance n'est plus un problème avec la visio-conférence !</p>
-        <button type="button" class="btn btn-info">+ d'infos</button>
-      </div>
-    </div>
-    
   </div>
 
+<div class="container">
+<form class="navbar-form navbar-left" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Nom">
+        <br><br>
+        <input type="text" class="form-control" placeholder="Prénom">
+        <br><br>
+        <input type="text" class="form-control" placeholder="Date de naissance">
+        <br><br>
+        <input type="text" class="form-control" placeholder="Adresse">
+        <br><br>
+        <input type="text" class="form-control" placeholder="Ville">
+        <br><br>
+        <input type="text" class="form-control" placeholder="Code Postal">
+        <br><br>
+        <input type="text" class="form-control" placeholder="Mail">
+        <br><br>
+        <input type="text" class="form-control" placeholder="Confirmez votre mail">
+        <br><br>
+        <input type="text" class="form-control" placeholder="Mot de passe">
+    <br><br>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+</form>
+</div>
 
 </body>
-
 </html>
 
 <!-- Scripts -->
