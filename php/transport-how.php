@@ -44,7 +44,7 @@
             <ul class="dropdown-menu">
 
               <li class="dropdown-header">Le transport à l'école</li>
-              <li><a href="transport-how.php">Comment ça marche ?</a></li>
+              <li class="active"><a href="transport-how.php">Comment ça marche ?</a></li>
               <li><a href="register.php">Devenir conducteur</a></li>
 
               <li role="separator" class="divider"></li>
@@ -72,8 +72,8 @@
 
   <div class="container">
     <div class="jumbotron">
-      <p>Covoiturage</p>
-      <p>Le bus scolaire partagé entre particuliers !</p>
+      <h2>Covoiturage</h2>
+      <h4>Le bus scolaire partagé entre particuliers !</h4>
     </div>
   </div>
 
@@ -118,8 +118,8 @@
     <a href="transport.php" class="btn btn-info" role="button">Consulter les trajets disponibles</a>
   </div>
 
-  
-  
+
+
 </body>
 
 </html>
