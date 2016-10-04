@@ -83,13 +83,13 @@ $req->execute();?>
 
 
 
+  <div class='container'>
 
+<div class="row">
     
          <?php $result = $req->fetchAll();
 foreach($result as $unResultat)
   { ?>
-  <div class='container'>
-<div class="row">
       <div class="col-sm-4 col-md-4">
         <div class="thumbnail">
         
@@ -105,10 +105,11 @@ foreach($result as $unResultat)
           </div>
         </div>
       </div>
-    </div>
 
-  </div>
   <?php } ?>
+    </div>
+  
+  </div>
       
 
 </body>
