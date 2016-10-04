@@ -74,7 +74,7 @@
     </div>
 
     <div class="btn-group" role="group" aria-label="...">
-      <a href="connexion.php" class="btn btn-default" role="button">Se déconnecter</a>
+      <a href="#" class="btn btn-default" role="button">Se déconnecter</a>
     </div>
 
   </div>
