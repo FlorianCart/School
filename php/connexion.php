@@ -102,10 +102,6 @@ else
   </nav>
   
 
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 <?php if (empty($_SESSION['pseudo']))
 { ?><div class="container">
     
@@ -120,10 +116,7 @@ else
             <button type="submit" name="valider" class="btn btn-default">Submit</button>
         </div>
     </form>
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
 </div>
 <?php } 
 if(isset($_POST['valider']))
