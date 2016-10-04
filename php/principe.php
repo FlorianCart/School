@@ -71,9 +71,8 @@
   <div class="container" id='bloc-principe'>
 
     <div class="jumbotron">
-      <h2>Le principe de l'aide aux devoirs est simple.</h2>
-
-      <h4>L'aide aux devoirs devient simple grâce à SchoolTool</h4>
+       <p>Le principe de l'aide aux devoirs est simple.</p>
+       <p>L'aide aux devoirs devient simple grâce à SchoolTool</p>
     </div>
 
   </div>
@@ -130,7 +129,6 @@
 
 
   </div>
-
 
 </body>
 

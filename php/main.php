@@ -99,7 +99,7 @@
       <div class="bordure">
         <span class="fa fa-book" aria-hidden="true"></span>
         <span class="titrebloc"><h3>Aide aux devoirs</h3></span>
-        <p>Progressez durant votre année scolaire graçe a l'entraide scolaire !</p>
+        <p>Progressez durant votre année scolaire grâce a l'entraide scolaire !</p>
         <button a href='register.php' type="button" class="btn btn-info">Devenir prof ou élève</button>
       </div>
     </div>
