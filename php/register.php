@@ -73,11 +73,9 @@
       <p>Veullez remplir tous les champs ci-dessous afin de procéder a votre inscription.</p>
     </div>
   </div>
-
-  <<<<<<< HEAD <div class="container">
+<div class="container">
     <form class="navbar-form navbar-left" role="search" method="post">
       <div class="form-group">
-<<<<<<< HEAD
         <input type="text" class="form-control" placeholder="Nom">
         <br><br>
         <input type="text" class="form-control" placeholder="Prénom">
@@ -100,34 +98,6 @@
       </div>
     </form>
   </div>
-=======
-        <input type="text" class="form-control" placeholder="Nom" name="nom"> =======
-        <div class="container">
-          <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Nom"> >>>>>>> origin/master
-              <br><br>
-              <input type="text" class="form-control" placeholder="Prénom" name="prenom">
-              <br><br>
-              <input type="text" class="form-control" placeholder="Date de naissance">
-              <br><br>
-              <input type="text" class="form-control" placeholder="Adresse">
-              <br><br>
-              <input type="text" class="form-control" placeholder="Ville">
-              <br><br>
-              <input type="text" class="form-control" placeholder="Code Postal">
-              <br><br>
-              <input type="text" class="form-control" placeholder="Mail">
-              <br><br>
-              <input type="text" class="form-control" placeholder="Confirmez votre mail">
-              <br><br>
-              <input type="text" class="form-control" placeholder="Mot de passe">
-              <br><br>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </div>
-          </form>
-        </div>
->>>>>>> 9ddc79a27114603851fc5e260f79a0f27f1a39de
 
 </body>
 
