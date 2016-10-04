@@ -6,24 +6,14 @@ $pseudo = $_POST['pseudo'];
 
 include("bdd.php");
 // Vérification des identifiants
-$req = $bdd->prepare('SELECT * FROM client WHERE email = :pseudo AND mdp = :pass');
+$req = $bdd->prepare('SELECT * FROM utilisateur WHERE email = :pseudo AND mdp = :pass');
 $req->execute(array(
     'pseudo' => $pseudo,
     'pass' => $pass_hache));
 
 $resultat = $req->fetch();
 
-if (!$resultat)
-{
-   
-}
-else
-{
-    
-    $_SESSION['id'] = $resultat['id'];
-    $_SESSION['pseudo'] = $pseudo;
 
-}
 
 ?>
 <html lang="en">
@@ -97,7 +87,7 @@ else
 
 <?php if (empty($_SESSION['pseudo']))
 { ?><div class="container">
-    <p class="navbar-text">Merci de remplir tous les champs pour se connecter</p>
+    
 </div>
 <div class="container">
     <form class="navbar-form" method="post">
@@ -111,23 +101,27 @@ else
     </form>
 </div>
 <?php } 
+if(isset($_POST['valider']))
+{
+
+
 if (!$resultat)
 {
     echo 'Mauvais identifiant ou mot de passe !';
-    echo $pass_hache."ddd";
-    echo $pseudo;
+    
 }
 else
 {
     
     $_SESSION['id'] = $resultat['id'];
+    $_SESSION['fonction']="utilisateur";
     $_SESSION['pseudo'] = $pseudo;
     echo 'Vous êtes connecté !';
 }
 if (isset($_SESSION['pseudo']))
 {
     echo 'Bonjour ' . $_SESSION['pseudo'];
-}?>
+}}?>
 </body>
 </html>
 
