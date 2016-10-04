@@ -13,7 +13,17 @@ $req->execute(array(
 
 $resultat = $req->fetch();
 
+if (!$resultat)
+{
+   
+}
+else
+{
+    
+    $_SESSION['id'] = $resultat['id'];
+    $_SESSION['pseudo'] = $pseudo;
 
+}
 
 ?>
 <html lang="en">
