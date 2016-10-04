@@ -124,7 +124,7 @@ if(isset($_POST['valider']))
 
 if (!$resultat && !$resultat2)
 {
-    echo 'Mauvais identifiant ou mot de passe !';
+    echo 'Mauvaiss identifiant ou mot de passe !';
     
 }
 else if($resultat2)
