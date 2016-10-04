@@ -50,7 +50,7 @@
 
               <li class="dropdown-header">Aide aux devoirs</li>
               <li><a href="#">Principes</a></li>
-              <li><a href="#">Les "Professeurs"</a></li>
+              <li><a href="profs.php">Les "Professeurs"</a></li>
               <li><a href='#'>Les élèves</a></li>
 
             </ul>
@@ -69,21 +69,21 @@
   </nav>
 
   <div class="container" id='bloc-accueil'>
-    
+
     <div class="jumbotron">
-       <p>Bonjour et bienvenue sur SchoolTool. Le service d'aide à la personne dans le domaine scolaire, pour faciliter le déplacement, et l'apprentissage à chacun.</p>
+      <p>Bonjour et bienvenue sur SchoolTool. Le service d'aide à la personne dans le domaine scolaire, pour faciliter le déplacement, et l'apprentissage à chacun.</p>
     </div>
-     
+
     <div class="btn-group" role="group" aria-label="...">
       <a href="connexion.php" class="btn btn-default" role="button">Se connecter</a>
     </div>
     <div class="btn-group" role="group" aria-label="...">
       <a href="register.php" class="btn btn-success" role="button">S'inscrire</a>
     </div>
-    
-</div>
-    
-    
+
+  </div>
+
+
   <div class="container" id="reassurance-bloc">
 
     <div class="col-md-4">
@@ -91,28 +91,28 @@
         <span class="fa fa-car" aria-hidden="true"></span>
         <span class="titrebloc"><h3>Co-voiturage</h3></span>
         <p>Amenez vos enfants et ceux de vos voisins pour plus de liberté !</p>
-        <button type="button" class="btn btn-info">Trajets Disponibles</button>
+        <button a href='transport.php' type="button" class="btn btn-info">Trajets Disponibles</button>
       </div>
     </div>
-    
+
     <div class="col-md-4">
       <div class="bordure">
         <span class="fa fa-book" aria-hidden="true"></span>
         <span class="titrebloc"><h3>Aide aux devoirs</h3></span>
         <p>Progressez durant votre année scolaire graçe a l'entraide scolaire !</p>
-        <button type="button" class="btn btn-info">Devenir prof ou élève</button>
+        <button a href='register.php' type="button" class="btn btn-info">Devenir prof ou élève</button>
       </div>
     </div>
-    
+
     <div class="col-md-4">
       <div class="bordure">
         <span class="fa fa-wifi" aria-hidden="true"></span>
         <span class="titrebloc"><h3>Chez vous ou a distance</h3></span>
         <p>La distance n'est plus un problème avec la visio-conférence !</p>
-        <button type="button" class="btn btn-info">+ d'infos</button>
+        <button a href='#' type="button" class="btn btn-info">+ d'infos</button>
       </div>
     </div>
-    
+
   </div>
 
 
