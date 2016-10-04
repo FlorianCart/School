@@ -12,8 +12,15 @@ $req->execute(array(
     'pass' => $pass_hache));
 
 $resultat = $req->fetch();
+$req2 = $bdd->prepare('SELECT * FROM admin WHERE email = :pseudo AND mdp = :pass');
+$req2->execute(array(
+    'pseudo' => $pseudo,
+    'pass' => $pass_hache));
 
-if (!$resultat)
+$resultat2 = $req2->fetch();
+
+
+if (!$resultat && !$resultat2)
 {
    
 }
@@ -115,10 +122,18 @@ if(isset($_POST['valider']))
 {
 
 
-if (!$resultat)
+if (!$resultat && !$resultat2)
 {
     echo 'Mauvais identifiant ou mot de passe !';
     
+}
+else if($resultat2)
+{
+  echo "connecté en tant qu administrateur";
+  $_SESSION['id'] = $resultat['id'];
+    $_SESSION['fonction']="administrateur";
+    $_SESSION['pseudo'] = $pseudo;
+    echo $_SESSION['fonction']."dd";
 }
 else
 {
