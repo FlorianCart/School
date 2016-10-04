@@ -102,7 +102,7 @@ else
     
 </div>
 <div class="container">
-=======
+
 
   <?php if (empty($_SESSION['pseudo']))
 { ?>
@@ -110,7 +110,7 @@ else
     <p class="navbar-text">Merci de remplir tous les champs pour se connecter</p>
   </div>
   <div class="container">
->>>>>>> origin/master
+
     <form class="navbar-form" method="post">
       <div class="form-group">
         <input name="pseudo" class="form-control" placeholder="Email" type="email">
@@ -127,10 +127,10 @@ if(isset($_POST['valider']))
 {
 
 
-=======
+
   </div>
   <?php } 
->>>>>>> origin/master
+
 if (!$resultat)
 {
     echo 'Mauvais identifiant ou mot de passe !';

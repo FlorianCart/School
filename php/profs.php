@@ -50,7 +50,7 @@
 
               <li class="dropdown-header">Aide aux devoirs</li>
               <li><a href="principe.php">Principes</a></li>
-              <li><a href="profs.php">Les "Professeurs"</a></li>
+              <li class="active"><a href="profs.php">Les "Professeurs"</a></li>
               <li><a href='#'>Les élèves</a></li>
 
             </ul>
@@ -79,8 +79,8 @@
 
 
   <div class='container'>
-    
-     <div class="col-md-6">
+
+    <div class="col-md-6">
       <div class="bordure">
         <i class="fa fa-map" aria-hidden="true"></i>
         <span class="titrebloc"><h3>À domicile</h3></span>
@@ -99,7 +99,7 @@
 
       </div>
     </div>
-    
+
     <a href="devoir.php" class="btn btn-info" role="button">Voir les créneaux disponibles</a>
 
   </div>
