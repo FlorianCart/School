@@ -3,17 +3,19 @@
 // Hachage du mot de passe
 $pass_hache = $_POST['pass'];
 $pseudo = $_POST['pseudo'];
-
 include("bdd.php");
 // Vérification des identifiants
 $req = $bdd->prepare('SELECT * FROM utilisateur WHERE email = :pseudo AND mdp = :pass');
 $req->execute(array(
     'pseudo' => $pseudo,
     'pass' => $pass_hache));
-
 $resultat = $req->fetch();
-
-if (!$resultat)
+$req2 = $bdd->prepare('SELECT * FROM admin WHERE email = :pseudo AND mdp = :pass');
+$req2->execute(array(
+    'pseudo' => $pseudo,
+    'pass' => $pass_hache));
+$resultat2 = $req2->fetch();
+if (!$resultat && !$resultat2)
 {
    
 }
@@ -22,26 +24,22 @@ else
     
     $_SESSION['id'] = $resultat['id'];
     $_SESSION['pseudo'] = $pseudo;
-
 }
-
 ?>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-  <title>Connexion - SchoolTool</title>
+    <title>Connexion - SchoolTool</title>
 </head>
-
 <body>
 
 
 
-  <nav class="navbar navbar-default navbar-static-top">
+ <nav class="navbar navbar-default navbar-static-top">
 
     <div class="container">
 
@@ -77,8 +75,8 @@ else
               <li role="separator" class="divider"></li>
 
               <li class="dropdown-header">Aide aux devoirs</li>
-              <li><a href="principe.php">Principes</a></li>
-              <li><a href="profs.php">Les "Professeurs"</a></li>
+              <li><a href="#">Principes</a></li>
+              <li><a href="#">Les "Professeurs"</a></li>
               <li><a href='#'>Les élèves</a></li>
 
             </ul>
@@ -86,7 +84,7 @@ else
           <li><a href='quinoussommes.php'>A propos</a></li>
         </ul>
 
-        <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+       <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
           <li class="active"><a href="connexion.php"><i class="fa fa-user" aria-hidden="true"></i> Mon compte</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right visible-sm visible-xs">
@@ -95,46 +93,39 @@ else
       </div>
     </div>
   </nav>
-
+  
 
 <?php if (empty($_SESSION['pseudo']))
 { ?><div class="container">
     
 </div>
 <div class="container">
-
-
-  <?php if (empty($_SESSION['pseudo']))
-{ ?>
-  <div class="container">
-    <p class="navbar-text">Merci de remplir tous les champs pour se connecter</p>
-  </div>
-  <div class="container">
-
     <form class="navbar-form" method="post">
-      <div class="form-group">
-        <input name="pseudo" class="form-control" placeholder="Email" type="email">
-        <br><br>
-        <input type="password" name="pass" class="form-control" placeholder="Mot de passe">
-        <br><br>
-        <button type="submit" name="valider" class="btn btn-default">Submit</button>
-      </div>
+        <div class="form-group">
+            <input  name="pseudo" class="form-control" placeholder="Email" type="email">
+            <br><br>
+            <input type="password" name="pass" class="form-control" placeholder="Mot de passe">
+            <br><br>
+            <button type="submit" name="valider" class="btn btn-default">Submit</button>
+        </div>
     </form>
 
 </div>
 <?php } 
 if(isset($_POST['valider']))
 {
-
-
-
-  </div>
-  <?php } 
-
-if (!$resultat)
+if (!$resultat && !$resultat2)
 {
-    echo 'Mauvais identifiant ou mot de passe !';
+    echo 'Mauvaiss identifiant ou mot de passe !';
     
+}
+else if($resultat2)
+{
+  echo "connecté en tant qu administrateur";
+  $_SESSION['id'] = $resultat['id'];
+    $_SESSION['fonction']="administrateur";
+    $_SESSION['pseudo'] = $pseudo;
+    echo $_SESSION['fonction']."dd";
 }
 else
 {
@@ -149,7 +140,6 @@ if (isset($_SESSION['pseudo']))
     echo 'Bonjour ' . $_SESSION['pseudo'];
 }}?>
 </body>
-
 </html>
 
 <!-- Scripts -->
