@@ -1,15 +1,58 @@
 <!DOCTYPE html>
+<?php
+include_once("bdd.php");
+// on teste si le visiteur a soumis le formulaire
+if (isset($_POST['register']) && $_POST['register'] == 'Register') {
+   
+ $nom = $_POST['nom'];
+ $prenom = $_POST['prenom'];
+ $naissance = $_POST['naissance'];
+ $sexe = $_POST['sexe'];
+ $adresse=$_POST['adresse'];
+ $ville = $_POST['ville'];
+ $cp = $_POST['cp'];
+ $email = $_POST['email'];
+ $mdp = $_POST['mdp'];
+ $mdpconfirm = $_POST['mdpconfirm'];
+ $con = ("INSERT INTO utilisateur(nom,prenom,naissance,sexe,adresse,ville,cp,email,mdp) VALUES('$nom','$prenom','$naissance','$sexe','$adresse','$ville','$cp','$email','$mdp')");
+ 
+ if ($_POST['mdp'] != $_POST['mdpconfirm']) {
+		$erreur = 'Les 2 mots de passe sont différents.';
+	}
+else{
+	$verif = $bdd->prepare("SELECT email from utilisateur WHERE email='$email'");
+	$verif->execute();
+	if(!$verif->fetch()){
+		try{
+			$req=$bdd->prepare($con);
+			$req->execute();
+			echo "Inscription réussie";
+
+		}
+		catch(Exception $e){
+        die('Erreur : '.$e->getMessage());
+		}
+		
+	}
+	else{
+		echo "Le mail est déjà utilisé";
+	}
+
+}
+ 
+}
+
+?>
+
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-  <title>Inscription - SchoolTool</title>
+    <title>Inscription - SchoolTool</title>
 </head>
-
 <body>
 
 
@@ -49,8 +92,8 @@
               <li role="separator" class="divider"></li>
 
               <li class="dropdown-header">Aide aux devoirs</li>
-              <li><a href="principe.php">Principes</a></li>
-              <li><a href="profs.php">Les "Professeurs"</a></li>
+              <li><a href="#">Principes</a></li>
+              <li><a href="#">Les "Professeurs"</a></li>
               <li><a href='#'>Les élèves</a></li>
 
             </ul>
@@ -68,44 +111,45 @@
     </div>
   </nav>
 
-  <div class="container">
+<div class="container">
     <div class="jumbotron">
       <p>Veullez remplir tous les champs ci-dessous afin de procéder a votre inscription.</p>
     </div>
   </div>
 
- <div class="container">
-    <form class="navbar-form navbar-left" role="search" method="post">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Nom" name="nom"> 
-        <div class="container">
-          <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Nom"> 
-              <br><br>
-              <input type="text" class="form-control" placeholder="Prénom" name="prenom">
-              <br><br>
-              <input type="text" class="form-control" placeholder="Date de naissance">
-              <br><br>
-              <input type="text" class="form-control" placeholder="Adresse">
-              <br><br>
-              <input type="text" class="form-control" placeholder="Ville">
-              <br><br>
-              <input type="text" class="form-control" placeholder="Code Postal">
-              <br><br>
-              <input type="text" class="form-control" placeholder="Mail">
-              <br><br>
-              <input type="text" class="form-control" placeholder="Confirmez votre mail">
-              <br><br>
-              <input type="text" class="form-control" placeholder="Mot de passe">
-              <br><br>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </div>
-          </form>
-        </div>
+<div class="container">
+<form class="navbar-form navbar-left" role="search" action="register.php" method="post">
+    <div class="form-group">
+        <input type="text" class="form-control" name="nom" placeholder="Nom">
+        <br><br>
+        <input type="text" class="form-control" name="prenom" placeholder="Prénom">
+        <br><br>
+        <input type="date" class="form-control" name="naissance" placeholder="Date de naissance">
+        <br><br>
+		<!--<input type="text" class="form-control" name="sexe" placeholder="Sexe">-->
+		<select name="sexe" id="sexe">
+		<option value="homme" selected>Homme</option>
+		<option value="femme">Femme</option>
+		</select>
+        <br><br>
+        <input type="text" class="form-control" name="adresse" placeholder="Adresse">
+        <br><br>
+        <input type="text" class="form-control" name="ville" placeholder="Ville">
+        <br><br>
+        <input type="number_format" class="form-control" name="cp" placeholder="Code Postal">
+        <br><br>
+        <input type="email" class="form-control" name="email" placeholder="Mail">
+        <br><br>
+        <input type="password" class="form-control" name="mdp" placeholder="Mot de passe">
+        <br><br>
+        <input type="password" class="form-control" name="mdpconfirm" placeholder="Confirmez votre Mot de Passe">
+    <br><br>
+        <button type="submit" name="register" class="btn btn-default" value="Register">Submit</button>
+    </div>
+</form>
+</div>
 
 </body>
-
 </html>
 
 <!-- Scripts -->
