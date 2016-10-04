@@ -96,7 +96,7 @@ else
     </div>
   </nav>
 
-<<<<<<< HEAD
+
 <?php if (empty($_SESSION['pseudo']))
 { ?><div class="container">
     
@@ -120,7 +120,7 @@ else
         <button type="submit" name="valider" class="btn btn-default">Submit</button>
       </div>
     </form>
-<<<<<<< HEAD
+
 </div>
 <?php } 
 if(isset($_POST['valider']))
@@ -138,7 +138,7 @@ if (!$resultat)
 }
 else
 {
-    
+  
     $_SESSION['id'] = $resultat['id'];
     $_SESSION['fonction']="utilisateur";
     $_SESSION['pseudo'] = $pseudo;

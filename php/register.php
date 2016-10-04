@@ -74,7 +74,7 @@
     </div>
   </div>
 
-  <<<<<<< HEAD <div class="container">
+ <div class="container">
     <form class="navbar-form navbar-left" role="search" method="post">
       <div class="form-group">
         <input type="text" class="form-control" placeholder="Nom" name="nom"> 
