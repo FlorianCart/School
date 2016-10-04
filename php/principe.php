@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-  <title>Accueil - SchoolTool</title>
+  <title>Principe des Devoirs - SchoolTool</title>
 </head>
 
 <body>
@@ -43,14 +43,14 @@
             <ul class="dropdown-menu">
 
               <li class="dropdown-header">Le transport à l'école</li>
-              <li><a href="#">Comment ça marche ?</a></li>
+              <li><a href="transport-how.php">Comment ça marche ?</a></li>
               <li><a href="register.php">Devenir conducteur</a></li>
 
               <li role="separator" class="divider"></li>
 
               <li class="dropdown-header">Aide aux devoirs</li>
               <li><a href="principe.php">Principes</a></li>
-              <li><a href="#">Les "Professeurs"</a></li>
+              <li><a href="profs.php">Les "Professeurs"</a></li>
               <li><a href='#'>Les élèves</a></li>
 
             </ul>
@@ -68,10 +68,11 @@
     </div>
   </nav>
 
-  <div class="container" id='bloc-accueil'>
+  <div class="container" id='bloc-principe'>
     
     <div class="jumbotron">
        <p>Le principe de l'aide aux devoirs est simple.</p>
+<<<<<<< HEAD
        <p>L'aide aux devoirs devient simple grâce à SchoolTool</p>
     </div>
     
@@ -117,6 +118,22 @@
   </div>
     
   </div>
+=======
+       
+      
+      <div class="btn-group" role="group" aria-label="...">
+        <a href="devoir.php" class="btn btn-info" role="button">Accès au cours disponible</a>
+      </div>
+    </div>
+    
+    <div class='container'>
+      <p>Chaque professeur ou Etudiant souhaitant aider, peut inscrire ses créneaux et matières principales, pour subvenir aux besoins d'un/des jeunes étudiants. </p>
+       <p>L'objectif principal est d'aidé les nombreuses en difficultés sur de nombreuses matières, pour faciliter la réussite de chacun. Nous voulons la réussite pour TOUS</p>
+    </div>
+    
+</div>
+
+>>>>>>> ba8f899c439ecd97fe1f1e811d0e295ecc16e8fb
 
 </body>
 

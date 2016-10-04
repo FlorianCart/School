@@ -50,8 +50,8 @@
               <li role="separator" class="divider"></li>
 
               <li class="dropdown-header">Aide aux devoirs</li>
-              <li><a href="#">Principes</a></li>
-              <li><a href="#">Les "Professeurs"</a></li>
+              <li><a href="principe.php">Principes</a></li>
+              <li><a href="profs.php">Les "Professeurs"</a></li>
               <li><a href='#'>Les élèves</a></li>
 
             </ul>
@@ -59,7 +59,7 @@
           <li><a href='quinoussommes.php'>A propos</a></li>
         </ul>
 
-       <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+        <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
           <li class="active"><a href="connexion.php"><i class="fa fa-user" aria-hidden="true"></i> Mon compte</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right visible-sm visible-xs">
