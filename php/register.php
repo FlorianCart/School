@@ -91,9 +91,9 @@
         <br><br>
         <input type="text" class="form-control" placeholder="Mail">
         <br><br>
-        <input type="text" class="form-control" placeholder="Confirmez votre mail">
+        <input type="password" class="form-control" placeholder="Mot de passe">
         <br><br>
-        <input type="text" class="form-control" placeholder="Mot de passe">
+        <input type="password" class="form-control" placeholder="Confirmation mot de passe">
         <br><br>
         <button type="submit" class="btn btn-default">Submit</button>
       </div>

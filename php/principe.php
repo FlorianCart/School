@@ -72,7 +72,6 @@
     
     <div class="jumbotron">
        <p>Le principe de l'aide aux devoirs est simple.</p>
-<<<<<<< HEAD
        <p>L'aide aux devoirs devient simple grâce à SchoolTool</p>
     </div>
     
@@ -118,22 +117,6 @@
   </div>
     
   </div>
-=======
-       
-      
-      <div class="btn-group" role="group" aria-label="...">
-        <a href="devoir.php" class="btn btn-info" role="button">Accès au cours disponible</a>
-      </div>
-    </div>
-    
-    <div class='container'>
-      <p>Chaque professeur ou Etudiant souhaitant aider, peut inscrire ses créneaux et matières principales, pour subvenir aux besoins d'un/des jeunes étudiants. </p>
-       <p>L'objectif principal est d'aidé les nombreuses en difficultés sur de nombreuses matières, pour faciliter la réussite de chacun. Nous voulons la réussite pour TOUS</p>
-    </div>
-    
-</div>
-
->>>>>>> ba8f899c439ecd97fe1f1e811d0e295ecc16e8fb
 
 </body>
 
