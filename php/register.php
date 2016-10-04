@@ -77,11 +77,11 @@
   <<<<<<< HEAD <div class="container">
     <form class="navbar-form navbar-left" role="search" method="post">
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Nom" name="nom"> =======
+        <input type="text" class="form-control" placeholder="Nom" name="nom"> 
         <div class="container">
           <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Nom"> >>>>>>> origin/master
+              <input type="text" class="form-control" placeholder="Nom"> 
               <br><br>
               <input type="text" class="form-control" placeholder="Prénom" name="prenom">
               <br><br>
