@@ -115,9 +115,11 @@
         <p>Une fois arrivé, le conducteur confirme sur son compte que les enfants ont bien étés déposés.</p>
       </div>
     </div>
-
+    <a href="transport.php" class="btn btn-info" role="button">Consulter les trajets disponibles</a>
   </div>
 
+  
+  
 </body>
 
 </html>
