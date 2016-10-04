@@ -101,7 +101,7 @@ foreach($result as $unResultat)
             <p><i class="fa fa-calendar" aria-hidden="true"></i> <?php     echo "<td>".$unResultat["horaire"]."</td>"; ?></p>
             <p><i class="fa fa-clock-o" aria-hidden="true"></i> : <?php     echo "<td>".$unResultat["email"]."</td>"; ?></p>
              <p><i class="fa fa-clock-o" aria-hidden="true"></i> : <?php     echo "<td>".$unResultat["telephone"]."</td>"; ?></p>
-            <p><a href="#" class="btn btn-primary" role="button">+ d'infos</a> <a href="#" class="btn btn-default" role="button">Réserver</a></p>
+            <p> <a href="#" class="btn btn-default" role="button">Réserver</a></p>
           </div>
         </div>
       </div>
