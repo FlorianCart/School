@@ -43,7 +43,7 @@
             <ul class="dropdown-menu">
 
               <li class="dropdown-header">Le transport à l'école</li>
-              <li><a href="#">Comment ça marche ?</a></li>
+              <li><a href="transport-how.php">Comment ça marche ?</a></li>
               <li><a href="register.php">Devenir conducteur</a></li>
 
               <li role="separator" class="divider"></li>
