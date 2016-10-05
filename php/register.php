@@ -44,6 +44,10 @@ else{
 			echo "Le mail est déjà utilisé";
 			}
 			
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1cd3773c3072550f9cdcee5b9310818b19735c80
 		}
 		catch(Exception $e){
         die('Erreur : '.$e->getMessage());
@@ -53,9 +57,17 @@ else{
 	else{
 		echo "Au moins un des champs est vide";
 		}
+<<<<<<< HEAD
 }
  
 }
+=======
+
+}
+ 
+}
+
+>>>>>>> 1cd3773c3072550f9cdcee5b9310818b19735c80
 ?>
 
 <html lang="en">

@@ -15,7 +15,7 @@
 
 
 
-  <nav class="navbar navbar-default navbar-static-top">
+ <nav class="navbar navbar-default navbar-static-top">
 
     <div class="container">
 
@@ -53,18 +53,17 @@
               <li class="dropdown-header">Aide aux devoirs</li>
               <li><a href="principe.php">Principes</a></li>
               <li><a href="profs.php">Les "Professeurs"</a></li>
-              <li><a href='#'>Les élèves</a></li>
 
             </ul>
           </li>
-          <li class='active'><a href='quinoussommes.php'>A propos</a></li>
+          <li><a href='quinoussommes.php'>A propos</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
-          <li class="active"><a href="connexion.php"><i class="fa fa-user" aria-hidden="true"></i> Mon compte</a></li>
+          <li class="active"><a href="account.php"><i class="fa fa-user" aria-hidden="true"></i> Mon compte</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right visible-sm visible-xs">
-          <li class="active"><a href="connexion.php"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+          <li class="active"><a href="account.php"><i class="fa fa-user" aria-hidden="true"></i></a></li>
         </ul>
       </div>
     </div>
