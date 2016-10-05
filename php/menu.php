@@ -12,14 +12,14 @@
             
           </button>
 
-        <a class="navbar-brand" id="branding" href="main.php">SchoolTool</a>
+        <a class="navbar-brand" id="branding" href="index.php">SchoolTool</a>
 
       </div>
       <div id="navbar" class="navbar-collapse collapse">
 
         <ul class="nav navbar-nav">
 
-          <li><a href="main.php">Accueil</a></li>
+          <li><a href="index.php">Accueil</a></li>
           <li><a href="transport.php">Transport</a></li>
           <li><a href="devoir.php">Aide aux devoirs</a></li>
 
