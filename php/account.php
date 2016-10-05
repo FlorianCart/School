@@ -4,8 +4,6 @@
 <head>
 
   <meta charset="UTF-8">
-	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -22,30 +20,20 @@
 	}
 	?>
   <div class="container" id='bloc-accueil'>
-
-    <div class="jumbotron">
-      <p>Connecté en tant que <?php echo $_SESSION['prenom']?> </p>
-    </div>
-
-    <div class="btn-group" role="group" aria-label="...">
-      <a href="deconnexion.php" class="btn btn-default" role="button">Se déconnecter</a>
-    </div>
-
-  </div>
-
-
-  <div class="container" id="reassurance-bloc">
-	
+		<div class="jumbotron">
+		<p>Connecté en tant que <?php echo $_SESSION['prenom']?> </p>
+		</div>
+	</div>
 <?php if(isset($_SESSION['log'])){
 
 	if (isset($_SESSION['pseudo'])){
 	$upperLastName=  strtoupper($_SESSION['nom']);
-    echo 'Bonjour ' .$upperLastName.' '.$_SESSION['prenom']. ' (' . $_SESSION['pseudo'].')';
+    //echo 'Bonjour ' .$upperLastName.' '.$_SESSION['prenom']. ' (' . $_SESSION['pseudo'].')';
 	}
-
+	
 //Tableau pour afficher les values
  ?>
-   <table>    
+   <table style="margin-left:auto;margin-right:auto;">	    
         <tr>
 			<th>Nom</th>
 			<td><?php echo $upperLastName ?></td>
@@ -82,9 +70,13 @@
 		<td colspan="1" align="center"><a href="javascript:edt_id('<?php echo $_SESSION['id']; ?>')">Modifier le Profil</a></td>
 		</tr>
 
-</table>
+</table></br></br>
 <?php } ?>
-    
+	<div class="container" id='bloc-accueil'>
+		<div class="btn-group" role="group" aria-label="...">
+		<a href="deconnexion.php" class="btn btn-default" role="button">Se déconnecter</a>
+		</div>
+	</div>
 
   </div>
 
@@ -97,4 +89,4 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-0
+

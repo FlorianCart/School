@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
-include_once("bdd.php");
+include("bdd.php");
+include("menu.php");
 // on teste si le visiteur a soumis le formulaire
 if (isset($_POST['register']) && $_POST['register'] == 'Register') {
  $values=array();
@@ -39,6 +40,8 @@ else{
 			$req=$bdd->prepare($con);
 			$req->execute();
 			echo "Inscription réussie";
+			$_SESSION['ok']=1;
+			header('Location: redirect-register.php');
 			}
 			else{
 			echo "Le mail est déjà utilisé";
@@ -61,8 +64,6 @@ else{
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -82,11 +83,11 @@ else{
 <div class="container">
 <form class="navbar-form navbar-left" role="search" action="register.php" method="post">
     <div class="form-group">
-        <input type="text" class="form-control" name="nom" placeholder="Nom">
+        <input type="text" class="form-control" name="nom" placeholder="Nom" required>
         <br><br>
-        <input type="text" class="form-control" name="prenom" placeholder="Prénom">
+        <input type="text" class="form-control" name="prenom" placeholder="Prénom" required>
         <br><br>
-        <input type="date" class="form-control" name="naissance" placeholder="Date de naissance">
+        <input type="date" class="form-control" name="naissance" placeholder="Date de naissance" required>
         <br><br>
 		<!--<input type="text" class="form-control" name="sexe" placeholder="Sexe">-->
 		<select name="sexe" id="sexe">
@@ -94,17 +95,17 @@ else{
 		<option value="femme">Femme</option>
 		</select>
         <br><br>
-        <input type="text" class="form-control" name="adresse" placeholder="Adresse">
+        <input type="text" class="form-control" name="adresse" placeholder="Adresse" required>
         <br><br>
-        <input type="text" class="form-control" name="ville" placeholder="Ville">
+        <input type="text" class="form-control" name="ville" placeholder="Ville" required>
         <br><br>
-        <input type="number_format" class="form-control" name="cp" placeholder="Code Postal">
+        <input type="number" min="1" max="99999" class="form-control" name="cp" placeholder="Code Postal" required>
         <br><br>
-        <input type="email" class="form-control" name="email" placeholder="Mail">
+        <input type="email" class="form-control" name="email" placeholder="Mail" required>
         <br><br>
-        <input type="password" class="form-control" name="mdp" placeholder="Mot de passe">
+        <input type="password" class="form-control" name="mdp" placeholder="Mot de passe" required>
         <br><br>
-        <input type="password" class="form-control" name="mdpconfirm" placeholder="Confirmez votre Mot de Passe">
+        <input type="password" class="form-control" name="mdpconfirm" placeholder="Confirmez votre Mot de Passe" required>
     <br><br>
         <button type="submit" name="register" class="btn btn-default" value="Register">Submit</button>
     </div>

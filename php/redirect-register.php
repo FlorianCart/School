@@ -4,8 +4,6 @@
 <head>
 
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -15,14 +13,22 @@
 
 <body>
   
-<?php  include("menu.php") ?>
+<?php  include("menu.php");
+	if(isset($_SESSION['ok'])){?>
 
   <div class="container" id='confirm-inscription'>
 
-    <div class="alert alert-success" role="alert"><strong>Félicitations !</strong> Votre inscription est validée, vous allez être redirigé...</div>
-
+    <div class="alert alert-success" role="alert"><strong>Félicitations !</strong> Votre inscription est validée</div>
+	<a href="../index.php">Revenir à l'accueil</a>
 
   </div>
+	<?php } 
+	
+		else{
+			
+			header('Location: register.php');
+		}
+		?>
 
 
   <div class="container" id="reassurance-bloc">
