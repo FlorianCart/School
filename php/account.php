@@ -13,23 +13,75 @@
 
 <body>
 
- <?php  include("menu.php") ?>
-
+ <?php  include("menu.php");
+	if(!isset($_SESSION['log'])){
+	
+	 header('Location: connexion.php');
+	}
+	?>
   <div class="container" id='bloc-accueil'>
 
     <div class="jumbotron">
-      <p>Connecté en tant que </p>
+      <p>Connecté en tant que <?php echo $_SESSION['prenom']?> </p>
     </div>
 
     <div class="btn-group" role="group" aria-label="...">
-      <a href="#" class="btn btn-default" role="button">Se déconnecter</a>
+      <a href="deconnexion.php" class="btn btn-default" role="button">Se déconnecter</a>
     </div>
 
   </div>
 
 
   <div class="container" id="reassurance-bloc">
+	
+<?php if(isset($_SESSION['log'])){
 
+	if (isset($_SESSION['pseudo'])){
+	$upperLastName=  strtoupper($_SESSION['nom']);
+    echo 'Bonjour ' .$upperLastName.' '.$_SESSION['prenom']. ' (' . $_SESSION['pseudo'].')';
+	}
+
+//Tableau pour afficher les values
+ ?>
+   <table>    
+        <tr>
+			<th>Nom</th>
+			<td><?php echo $upperLastName ?></td>
+        </tr>
+		<tr>
+			<th>Prenom</th>
+			<td><?php echo $_SESSION['prenom']; ?></td>
+       </tr>
+		<tr>
+			<th>Naissance</th>
+			<td><?php echo $_SESSION['naissance'];  ?></td>
+		</tr>
+		<tr>
+			<th>Sexe</th>
+			<td><?php echo $_SESSION['sexe'];  ?></td>
+		</tr>
+		<tr>
+			<th>Ville</th>
+			<td><?php echo $_SESSION['ville'];  ?></td>
+		</tr>
+		<tr>
+			<th>Adresse</th>
+			<td><?php echo $_SESSION['adresse'];  ?></td>
+		</tr>
+		<tr>
+			<th>Code Postal</th>
+			<td><?php echo $_SESSION['cp'];  ?></td>
+		</tr>
+		<tr>
+			<th>E-mail</th>
+			<td><?php echo $_SESSION['email'];  ?></td>
+		</tr>
+		<tr>
+		<td colspan="1" align="center"><a href="javascript:edt_id('<?php echo $_SESSION['id']; ?>')">Modifier le Profil</a></td>
+		</tr>
+
+</table>
+<?php } ?>
     
 
   </div>

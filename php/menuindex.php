@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <nav class="navbar navbar-default navbar-static-top">
 
     <div class="container">
@@ -12,14 +13,14 @@
             
           </button>
 
-        <a class="navbar-brand" id="branding" href="../index.php">SchoolTool</a>
+        <a class="navbar-brand" id="branding" href="index.php">SchoolTool</a>
 
       </div>
       <div id="navbar" class="navbar-collapse collapse">
 
         <ul class="nav navbar-nav">
 
-          <li><a href="../index.php">Accueil</a></li>
+          <li><a href="index.php">Accueil</a></li>
           <li><a href="php/transport.php">Transport</a></li>
           <li><a href="php/devoir.php">Aide aux devoirs</a></li>
 
@@ -39,7 +40,7 @@
 
             </ul>
           </li>
-          <li><a href="php/quinoussommes.php">A propos</a></li>
+          <li><a href='php/quinoussommes.php'>A propos</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
