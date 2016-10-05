@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php include("bdd.php"); 
+$req = $bdd->prepare('SELECT * FROM trajet, utilisateur where utilisateur.id=trajet.idu');
+$req->execute();?>
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../css/transport.css">
@@ -80,24 +82,35 @@
 
 
 
+
   <div class='container'>
 
-    <div class="row">
+<div class="row">
+    
+         <?php $result = $req->fetchAll();
+foreach($result as $unResultat)
+  { ?>
       <div class="col-sm-4 col-md-4">
         <div class="thumbnail">
-          <img src="..." alt="...">
+        
           <div class="caption">
-            <h3>Colombes <i class="fa fa-arrow-right" aria-hidden="true"></i> Asnières</h3>
-            <p><i class="fa fa-user" aria-hidden="true"></i> : Jean-Paul</p>
-            <p><i class="fa fa-calendar" aria-hidden="true"></i> : 26/11/2016</p>
-            <p><i class="fa fa-clock-o" aria-hidden="true"></i> : 7h30</p>
-            <p><a href="#" class="btn btn-primary" role="button">+ d'infos</a> <a href="#" class="btn btn-default" role="button">Réserver</a></p>
+    
+
+          <h3><?php     echo "<td>".$unResultat["depart"]."</td>"; ?> <i class="fa fa-arrow-right" aria-hidden="true"></i> <?php     echo "<td>".$unResultat["arrivee"]."</td>"; ?></h3>
+            <p><i class="fa fa-user" aria-hidden="true"></i> : <?php     echo "<td>".$unResultat["prenom"]."</td>"; ?></p>
+            <p><i class="fa fa-calendar" aria-hidden="true"></i> <?php     echo "<td>".$unResultat["horaire"]."</td>"; ?></p>
+            <p><i class="fa fa-clock-o" aria-hidden="true"></i> : <?php     echo "<td>".$unResultat["email"]."</td>"; ?></p>
+             <p><i class="fa fa-clock-o" aria-hidden="true"></i> : <?php     echo "<td>".$unResultat["telephone"]."</td>"; ?></p>
+            <p> <a href="#" class="btn btn-default" role="button">Réserver</a></p>
           </div>
         </div>
       </div>
-    </div>
 
+  <?php } ?>
+    </div>
+  
   </div>
+      
 
 </body>
 
