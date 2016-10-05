@@ -16,8 +16,6 @@
 </head>
 
 <body>
-
-<?php include("menu.php") ?>
   
 
 <?php  include("php/menuindex.php") ?>
