@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <?php 
 include("menu.php");
-if(isset($_SESSION['log'])){
-	
-	echo "Vous êtes déjà connecté";
-}
 //Si on veut se connecter
 if(isset($_POST['valider'])){
 $pass_hache = $_POST['pass'];
@@ -25,12 +21,25 @@ $req2->execute(array(
     'pass' => $pass_hache));
 $resultat2 = $req2->fetch();
 
-if (!$resultat && !$resultat2)
-	{
-   
+if (!$resultat && !$resultat2){
+	echo "Mauvais identifiant ou mot de passe !";
 	}
-else
-{
+else{
+	if($resultat2){
+		echo "connecté en tant qu administrateur";
+		$_SESSION['id'] = $resultat['id'];
+		$_SESSION['fonction']="administrateur";
+		$_SESSION['pseudo'] = $pseudo;
+		echo $_SESSION['fonction']."dd";
+	}
+	else{
+		$_SESSION['id'] = $resultat['id'];
+		$_SESSION['fonction']="utilisateur";
+		$_SESSION['pseudo'] = $pseudo;
+		echo 'Vous êtes connecté ! ';
+	} 
+}
+if($resultat || $resultat2){
     //récupération des values in bdd de l'user
 	$_SESSION['log']=1;
     $_SESSION['id'] = $resultat['id'];
@@ -60,8 +69,9 @@ else
 
 <body>
 
-<?php if (empty($_SESSION['pseudo']))
-{ ?><div class="container">
+<?php if(!isset($_SESSION['log'])){ ?>
+
+<div class="container">
     
 </div>
 <div class="container">
@@ -76,37 +86,18 @@ else
     </form>
 
 </div>
-<?php } 
-if(isset($_POST['valider']))
-{
-
-if (!$resultat && !$resultat2)
-{
-    echo 'Mauvais identifiant ou mot de passe !';
-    
-}
-else if($resultat2)
-{
-  echo "connecté en tant qu administrateur";
-  $_SESSION['id'] = $resultat['id'];
-    $_SESSION['fonction']="administrateur";
-    $_SESSION['pseudo'] = $pseudo;
-    echo $_SESSION['fonction']."dd";
-}
-else
-{
-  
-    $_SESSION['id'] = $resultat['id'];
-    $_SESSION['fonction']="utilisateur";
-    $_SESSION['pseudo'] = $pseudo;
-    echo 'Vous êtes connecté ! ';
-}
-if (isset($_SESSION['pseudo']))
-{
+<?php }
+?> 
+<?php if(isset($_SESSION['log'])){
+	
+	if (isset($_SESSION['pseudo'])){
+		
 	$upperLastName=  strtoupper($_SESSION['nom']);
     echo 'Bonjour ' .$upperLastName.' '.$_SESSION['prenom']. ' (' . $_SESSION['pseudo'].')';
 
-}//Tableau pour afficher les values
+}
+	
+//Tableau pour afficher les values
  ?>
    <table>    
         <tr>
