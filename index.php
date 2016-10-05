@@ -14,12 +14,9 @@
 
 <body>
 
-<<<<<<< HEAD:index.php
 <?php  include("php/menuindex.php") ?>
-=======
-<?php include("menu.php") ?>
->>>>>>> origin/master:php/index.php
-  
+
+
   <div class="container">
 
     <div class="jumbotron" id='bloc-accueil'>
