@@ -17,15 +17,14 @@
 
 <body>
 
-<<<<<<< HEAD:php/index.php
 <?php include("menu.php") ?>
   
-=======
+
 <?php  include("php/menuindex.php") ?>
 
 
   <div class="container">
->>>>>>> 6ebee331c2dbabf66f306b6e2d35a61ee98892ed:index.php
+
 
  <div id="parallax1" class="parallax-container" data-parallax="scroll" data-position="middle" data-image-src="../image/soutien-scolaire.jpg" data-natural-width="1800" data-natural-height="1050">
     <div class="container" id='bloc-accueil'>
