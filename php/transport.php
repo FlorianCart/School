@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include("bdd.php"); 
-$req = $bdd->prepare('SELECT * FROM trajet, utilisateur where utilisateur.id=trajet.idu');
-$req->execute();?>
+$req = $bdd->prepare('SELECT * FROM trajet, utilisateur where utilisateur.id=trajet.idu and etat=1');
+$req->execute();
+$req2 = $bdd->prepare('SELECT * FROM trajet, utilisateur where utilisateur.id=trajet.idu and etat=0');
+$req2->execute();
+?>
+
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../css/transport.css">
@@ -34,6 +38,7 @@ $req->execute();?>
 <div class="row">
     
          <?php $result = $req->fetchAll();
+         $result2 = $req2->fetchAll();
 foreach($result as $unResultat)
   { ?>
       <div class="col-sm-4 col-md-4">
@@ -47,7 +52,49 @@ foreach($result as $unResultat)
             <p><i class="fa fa-calendar" aria-hidden="true"></i> <?php     echo "<td>".$unResultat["horaire"]."</td>"; ?></p>
             <p><i class="fa fa-clock-o" aria-hidden="true"></i> : <?php     echo "<td>".$unResultat["email"]."</td>"; ?></p>
              <p><i class="fa fa-clock-o" aria-hidden="true"></i> : <?php     echo "<td>".$unResultat["telephone"]."</td>"; ?></p>
-            <p> <a href="#" class="btn btn-default" role="button">Réserver</a></p>
+            <p>  <form class="navbar-form" method="get" action ="reserved.php">
+        <div class="form-group">
+            <input type="hidden" name="id" value="<?php     echo $unResultat["id"]; ?>">
+            <button type="submit" name="reserver" class="btn btn-default">Réserver</button>
+        </div>
+    </form></p>
+          </div>
+        </div>
+      </div>
+
+  <?php } ?>
+    </div>
+  
+  </div>
+   <div class="container">
+    <div class="jumbotron">
+      <p><span class="fa fa-bus" aria-hidden="true"></span> Voici les offres de transport déja réservé</p>
+
+    </div>
+  </div>
+    <div class='container'>
+
+<div class="row">
+    
+         <?php foreach($result2 as $unResultat)
+  { ?>
+      <div class="col-sm-4 col-md-4">
+        <div class="thumbnail">
+        
+          <div class="caption">
+    
+
+          <h3><?php     echo "<td>".$unResultat["depart"]."</td>"; ?> <i class="fa fa-arrow-right" aria-hidden="true"></i> <?php     echo "<td>".$unResultat["arrivee"]."</td>"; ?></h3>
+            <p><i class="fa fa-user" aria-hidden="true"></i> : <?php     echo "<td>".$unResultat["prenom"]."</td>"; ?></p>
+            <p><i class="fa fa-calendar" aria-hidden="true"></i> <?php     echo "<td>".$unResultat["horaire"]."</td>"; ?></p>
+            <p><i class="fa fa-clock-o" aria-hidden="true"></i> : <?php     echo "<td>".$unResultat["email"]."</td>"; ?></p>
+             <p><i class="fa fa-clock-o" aria-hidden="true"></i> : <?php     echo "<td>".$unResultat["telephone"]."</td>"; ?></p>
+            <p>  <form class="navbar-form" method="get" action ="reserved.php">
+        <div class="form-group">
+            <input type="hidden" name="id" value="<?php     echo $unResultat["id"]; ?>">
+            <button type="submit" name="reserver" class="btn btn-default">Trop tard</button>
+        </div>
+    </form></p>
           </div>
         </div>
       </div>
@@ -59,7 +106,12 @@ foreach($result as $unResultat)
       
 
 </body>
+<?php 
+if(isset($_POST['reserver']))
+{
 
+}
+?>
 </html>
 
 <!-- Scripts -->
