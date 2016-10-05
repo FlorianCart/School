@@ -20,33 +20,33 @@
         <ul class="nav navbar-nav">
 
           <li><a href="../index.php">Accueil</a></li>
-          <li><a href="transport.php">Transport</a></li>
-          <li><a href="devoir.php">Aide aux devoirs</a></li>
+          <li><a href="php/transport.php">Transport</a></li>
+          <li><a href="php/devoir.php">Aide aux devoirs</a></li>
 
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fonctionnement<span class="caret"></span></a>
             <ul class="dropdown-menu">
 
               <li class="dropdown-header">Le transport à l'école</li>
-              <li><a href="transport-how.php">Comment ça marche ?</a></li>
-              <li><a href="register.php">Devenir conducteur</a></li>
+              <li><a href="php/transport-how.php">Comment ça marche ?</a></li>
+              <li><a href="php/register.php">Devenir conducteur</a></li>
 
               <li role="separator" class="divider"></li>
 
               <li class="dropdown-header">Aide aux devoirs</li>
-              <li><a href="principe.php">Principes</a></li>
-              <li><a href="profs.php">Les "Professeurs"</a></li>
+              <li><a href="php/principe.php">Principes</a></li>
+              <li><a href="php/profs.php">Les "Professeurs"</a></li>
 
             </ul>
           </li>
-          <li><a href='quinoussommes.php'>A propos</a></li>
+          <li><a href="php/quinoussommes.php">A propos</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
-          <li class="active"><a href="account.php"><i class="fa fa-user" aria-hidden="true"></i> Mon compte</a></li>
+          <li class="active"><a href="php/account.php"><i class="fa fa-user" aria-hidden="true"></i> Mon compte</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right visible-sm visible-xs">
-          <li class="active"><a href="account.php"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+          <li class="active"><a href="php/account.php"><i class="fa fa-user" aria-hidden="true"></i></a></li>
         </ul>
       </div>
     </div>
