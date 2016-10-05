@@ -42,10 +42,17 @@
   <div class="col-md-12" id="boutons-main">
       
     <div class="btn-group" id='bouton-connect' role="group" aria-label="...">
+<<<<<<< Updated upstream
       <a id="bouton-connexion" href="connexion.php" class="btn btn-default btn-lg" role="button">Se connecter</a>
     </div>
     <div class="btn-group" id='bouton-register' role="group" aria-label="...">
       <a id="bouton-inscrit" href="register.php" class="btn btn-success btn-lg" role="button">S'inscrire</a>
+=======
+      <a href="php/connexion.php" class="btn btn-default btn-lg" role="button">Se connecter</a>
+    </div>
+    <div class="btn-group" id='bouton-register' role="group" aria-label="...">
+      <a href="php/register.php" class="btn btn-success btn-lg" role="button">S'inscrire</a>
+>>>>>>> Stashed changes
     </div>
     
     </div>

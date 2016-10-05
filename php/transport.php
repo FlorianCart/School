@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include("bdd.php"); 
+<?php   include("bdd.php"); 
 $req = $bdd->prepare('SELECT * FROM trajet, utilisateur where utilisateur.id=trajet.idu and etat=1');
 $req->execute();
 $req2 = $bdd->prepare('SELECT * FROM trajet, utilisateur where utilisateur.id=trajet.idu and etat=0');
@@ -20,7 +20,7 @@ $req2->execute();
 
 
 
-<?php  include("menu.php") ?>
+<?php  include("menu.php"); ?>
 
   <div class="container">
     <div class="jumbotron">
@@ -54,7 +54,7 @@ foreach($result as $unResultat)
              <p><i class="fa fa-clock-o" aria-hidden="true"></i> : <?php     echo "<td>".$unResultat["telephone"]."</td>"; ?></p>
             <p>  <form class="navbar-form" method="get" action ="reserved.php">
         <div class="form-group">
-            <input type="hidden" name="id" value="<?php     echo $unResultat["id"]; ?>">
+            <input type="hidden" name="id" value="<?php     echo $unResultat["id_trajet"]; ?>">
             <button type="submit" name="reserver" class="btn btn-default">Réserver</button>
         </div>
     </form></p>

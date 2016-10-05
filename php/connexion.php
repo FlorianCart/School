@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php 
+	
 include("menu.php");
 //Si on veut se connecter
 if(isset($_POST['valider'])){
