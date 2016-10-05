@@ -12,11 +12,11 @@
             
           </button>
 
-<<<<<<< HEAD
+
         <a class="navbar-brand" id="branding" href="../index.php">SchoolTool</a>
-=======
+
         <a class="navbar-brand" id="branding" href="index.php">SchoolTool</a>
->>>>>>> origin/master
+
 
       </div>
       <div id="navbar" class="navbar-collapse collapse">
