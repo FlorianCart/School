@@ -21,7 +21,7 @@
 
         <ul class="nav navbar-nav">
 
-          <li><a href="/index.php">Accueil</a></li>
+          <li><a href="../index.php">Accueil</a></li>
           <li><a href="transport.php">Transport</a></li>
           <li><a href="devoir.php">Aide aux devoirs</a></li>
 
