@@ -1,0 +1,46 @@
+#bloc-accueil {
+  background-color: #5668E8;
+  font-family: 'Hind', sans-serif;
+  color: #FFFFFF;
+  margin: 10px 0px;
+}
+
+#boutons-main {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+#bouton-connect, #bouton-register {
+  margin: 10px 15px;
+  padding: 5px;
+}
+
+#reassurance-bloc {
+  padding: 0px 0px;
+}
+
+.bordure {
+  display: inline-block;
+  background-color: #EDEDED;
+  border-radius: 7px;
+  padding: 10px;
+  min-width: 320px;
+}
+
+.col-md-4 {
+  text-align: center;
+  padding: 5px;
+}
+
+.fa.fa-car, .fa.fa-book, .fa.fa-wifi {
+  font-size: 35px;
+}
+
+.bordure h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.bordure p {
+  font-family: 'Hind', sans-serif;
+}
