@@ -54,7 +54,7 @@
         <span class="fa fa-car" aria-hidden="true"></span>
         <span class="titrebloc"><h3>Covoiturage</h3></span>
         <p>Amenez vos enfants et ceux de vos voisins<br>a l'école pour plus de liberté !</p>
-        <button a href='transport.php' type="button" class="btn btn-info">Trajets Disponibles</button>
+        <a href='php/transport.php' type="button" class="btn btn-info">Trajets Disponibles</a>
       </div>
     </div>
 
@@ -63,7 +63,7 @@
         <span class="fa fa-book" aria-hidden="true"></span>
         <span class="titrebloc"><h3>Aide aux devoirs</h3></span>
         <p>Progressez durant votre année scolaire<br>grâce a l'entraide scolaire !</p>
-        <button a href='register.php' type="button" class="btn btn-info">Devenir prof ou élève</button>
+        <a href='php/register.php' type="button" class="btn btn-info">Devenir prof ou élève</a>
       </div>
     </div>
 
@@ -72,7 +72,7 @@
         <span class="fa fa-wifi" aria-hidden="true"></span>
         <span class="titrebloc"><h3>Chez vous ou à distance</h3></span>
         <p>La distance n'est plus un problème<br>avec la visio-conférence !</p>
-        <button a href='devoir.php' type="button" class="btn btn-info">+ d'infos</button>
+        <a href='php/devoir.php' type="button" class="btn btn-info">+ d'infos</a>
       </div>
     </div>
 
