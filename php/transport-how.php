@@ -39,7 +39,7 @@
 
   <div class="container" id="howto-bloc">
 
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-12 col-xs-12">
       <div class="bordure">
         <i class="fa fa-map" aria-hidden="true"></i>
         <span class="titrebloc"><h3>Prévoyez votre trajet</h3></span>
@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-12 col-xs-12">
       <div class="bordure">
         <i class="fa fa-graduation-cap" aria-hidden="true"></i>
         <span class="titrebloc"><h3>En route vers l'école</h3></span>
@@ -59,7 +59,7 @@
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-12 col-xs-12">
       <div class="bordure">
         <i class="fa fa-check-circle" aria-hidden="true"></i>
         <span class="titrebloc"><h3>Un voyage sans accros</h3></span>
