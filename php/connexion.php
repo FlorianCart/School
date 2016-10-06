@@ -60,9 +60,7 @@ else{
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/connexion.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -75,8 +73,19 @@ else{
 if(!isset($_SESSION['log'])){ ?>
 
 <div class="container">
-    <form class="navbar-form" method="post">
-        <div class="form-group">
+  <div id="message-connexion" class="panel panel-info">
+  <div class="panel-heading">
+	<h3 class="panel-title">Connexion</h3>
+  </div>
+  <div class="panel-body">
+	<p>Veuillez vous identifier ci-dessous.</p>
+  </div>
+  </div>
+</div>
+
+<div  class="container">
+    <form id="logs" class="navbar-form" method="post">
+        <div  class="form-group">
             <input  name="pseudo" class="form-control" placeholder="Email" type="email">
             <br><br>
             <input name="pass" type="password"  class="form-control" placeholder="Mot de passe">
