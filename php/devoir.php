@@ -22,7 +22,7 @@
  
  <div id="parallax1" class="parallax-container" data-parallax="scroll" data-position="top" data-image-src="../image/big-dossier.jpg" data-natural-width="1200" data-natural-height="414">
     <div class="container" id='bloc-accueil'>
-      <p>Vous bloquez sur un exercice ? Une question par rapport a votre dernier cours de maths ?</p> 
+      <p>Vous bloquez sur un exercice ?</p> 
 		
 	</div>   
 </div>
