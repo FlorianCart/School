@@ -59,7 +59,7 @@
   border: 0.5px #737373 solid;
 }
 
-.col-md-6 {
+.col-md-6, .col-sm-12, .col-xs-12 {
   text-align: center;
   padding: 5px;
   margin-bottom: 20px;
