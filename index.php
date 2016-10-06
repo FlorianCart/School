@@ -74,7 +74,7 @@
         <span class="fa fa-wifi" aria-hidden="true"></span>
         <span class="titrebloc"><h3>Chez vous ou à distance</h3></span>
         <p>La distance n'est plus un problème<br>avec la visio-conférence !</p>
-        <a href='php/devoir.php' type="button" class="btn btn-info">+ d'infos</a>
+        <a href='php/principe.php' type="button" class="btn btn-info">+ d'infos</a>
       </div>
     </div>
 
