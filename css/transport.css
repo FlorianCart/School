@@ -1,16 +1,16 @@
 #dispo-texte, #indispo-texte{
 	background-color: #53AB45;
-	border: 1px solid black;
+	border: 1px solid #737373;
 	border-radius: 7px;
 	min-height: 60px;
 	text-align: center;
 	padding: 5px 0px;
-	margin-top: 10px;
+	margin-top: 60px;
 	margin-bottom: 10px;
 }
 
 #dispo-texte h1,#indispo-texte h1 {
-	font-size: 30px;
+	font-size: 20px;
 	font-family: font-family: 'Hind', sans-serif;
 	color: #FFFFFF;
 }

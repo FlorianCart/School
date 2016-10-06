@@ -1,0 +1,96 @@
+#parallax1{
+  margin-top: 50px;
+  height: 390px;
+  width: 100%;
+  background-image: linear-gradient(90deg, rgba(30, 30, 30, 0.6) 10%, rgba(46, 46, 46, 0.5) 90%); 
+}
+
+#bloc-accueil {
+  text-align: center;
+}
+
+#bloc-accueil p {
+  padding-top: 140px;
+  font-size: 40px;
+  font-family: 'Hind', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#bloc-accueil h1 {
+	font-size: 18px;
+	color: #EDEDED;
+	font-family: 'Hind', sans-serif;
+	text-align: center;
+}
+
+/*-----------------*/
+
+#texte-page-covoit {
+	text-align: center;
+	background-color: #53AB45;
+    border-top: 1px solid #535353;
+    border-bottom: 1px solid #737373;
+	padding-top: 8px;
+	height: 100%;
+}
+
+#texte-page-covoit p {
+	color: #FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	
+}
+
+/*-----------------*/
+
+#how-to {
+	font-size: 18px;
+	color: #000000;
+	font-family: 'Hind', sans-serif;
+	text-align: center;
+}
+
+#howto-bloc {
+  padding: 0px 0px;
+}
+
+.bordure {
+  display: inline-block;
+  background-color: #53AB45;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 320px;
+  border: 0.5px #737373 solid;
+}
+
+.col-md-4 {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.fa.fa-map, .fa.fa-graduation-cap, .fa.fa-check-circle {
+  font-size: 35px;
+}
+
+.bordure h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+}
+
+.bordure p {
+  font-family: 'Hind', sans-serif;
+  color: #FFFFFF;
+}
+
+
+#bouton-trajets {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn.btn-info {
+	background-color: #3B88DB;
+	border-color: #3B88DB;
+}
