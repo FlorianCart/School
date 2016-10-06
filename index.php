@@ -51,7 +51,7 @@
     <div class="row">
       
     
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-12 col-xs-12">
       <div class="bordure">
         <span class="fa fa-car" aria-hidden="true"></span>
         <span class="titrebloc"><h3>Covoiturage</h3></span>
@@ -60,7 +60,7 @@
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-12 col-xs-12">
       <div class="bordure">
         <span class="fa fa-book" aria-hidden="true"></span>
         <span class="titrebloc"><h3>Aide aux devoirs</h3></span>
@@ -69,7 +69,7 @@
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-12 col-xs-12">
       <div class="bordure">
         <span class="fa fa-wifi" aria-hidden="true"></span>
         <span class="titrebloc"><h3>Chez vous ou à distance</h3></span>
