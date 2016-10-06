@@ -1,0 +1,91 @@
+#parallax1{
+  margin-top: 20px;
+  height: 390px;
+  width: 100%;
+  background-image: linear-gradient(90deg, rgba(30, 30, 30, 0.6) 20%, rgba(46, 46, 46, 0.5) 80%); 
+}
+
+#bloc-accueil {
+  text-align: center;
+}
+
+#bloc-accueil p {
+  padding-top: 140px;
+  font-size: 40px;
+  font-family: 'Raleway', sans-serif;
+  color: #FFFFFF;
+}
+
+/*---------------------*/
+
+#container-texte-accueil {
+  background-color: #53AB45;
+  border-top: 1px solid #535353;
+  border-bottom: 1px solid #737373;
+  width: 100%;
+}
+
+#texte-accueil {
+  background-color: #53AB45;
+  min-height: 60px;
+}
+
+#texte-accueil h1 { 
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*------------------------*/
+
+#how-to {
+	font-size: 18px;
+	color: #000000;
+	font-family: 'Hind', sans-serif;
+	text-align: center;
+}
+
+#howto-bloc {
+  padding: 0px 0px;
+}
+
+.bordure {
+  display: inline-block;
+  background-color: #F2FAE1;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 320px;
+  border: 0.5px #737373 solid;
+}
+
+.col-md-6 {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.fa.fa-map, .fa.fa-graduation-cap {
+  font-size: 35px;
+}
+
+.bordure h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+}
+
+.bordure p {
+  font-family: 'Hind', sans-serif;
+  color: #000000;
+}
+
+
+#bouton-cours {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn.btn-info {
+	background-color: #3B88DB;
+	border-color: #3B88DB;
+}
