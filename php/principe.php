@@ -38,7 +38,7 @@
 
   <div class="container" id="howto-bloc">
 
-	<div class="col-md-4">
+	<div class="col-md-4 col-sm-12 col-xs-12">
       <div class="bordure">
         <i class="fa fa-graduation-cap" aria-hidden="true"></i>
         <span class="titrebloc"><h3>Des étudiants ou professeurs</h3></span>
@@ -48,7 +48,7 @@
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-12 col-xs-12">
       <div class="bordure">
         <i class="fa fa-child" aria-hidden="true"></i>
         <span class="titrebloc"><h3>Une réussite</h3></span>
@@ -57,7 +57,7 @@
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-12 col-xs-12">
       <div class="bordure">
         <i class="fa fa-home" aria-hidden="true"></i>
         <span class="titrebloc"><h3>Se déplacer ? Vous décidez</h3></span>
