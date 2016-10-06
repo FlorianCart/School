@@ -36,7 +36,7 @@
 
 <div class="container" id="howto-bloc">
 
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-12 col-xs-12">
       <div class="bordure">
         <i class="fa fa-map" aria-hidden="true"></i>
         <span class="titrebloc"><h3>À domicile</h3></span>
@@ -46,7 +46,7 @@
       </div>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-12 col-xs-12">
       <div class="bordure">
         <i class="fa fa-graduation-cap" aria-hidden="true"></i>
         <span class="titrebloc"><h3>À distance</h3></span>
