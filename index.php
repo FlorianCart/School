@@ -20,9 +20,9 @@
 <?php include("php/menuindex.php") ?>
   
 
- <div id="parallax1" class="parallax-container" data-parallax="scroll" data-position="middle" data-image-src="../image/soutien-scolaire.jpg" data-natural-width="1800" data-natural-height="1050">
+<div id="parallax1" class="parallax-container" data-parallax="scroll" data-position="middle" data-image-src="../image/soutien-scolaire.jpg" data-natural-width="1800" data-natural-height="1050">
     <div class="container" id='bloc-accueil'>
-      <p class="container">Bienvenue sur SchoolTool</p> 
+      <p class="container">Réussir ensemble</p> 
     </div>   
 </div>
 
@@ -30,9 +30,11 @@
   <div class="container" id="texte-accueil"><h1>Le service d'aide à la personne dans le domaine scolaire, pour faciliter le déplacement, et l'apprentissage à chacun.</h1>
   </div>
 </div> 
+
 <?php if(!isset($_SESSION['log'])){?>
 <div id="whale">
 
+ <div class="container" id="whale2">
   <div class="col-md-12" id="boutons-main">
     
     <div class="btn-group" id='bouton-connect' role="group" aria-label="...">
@@ -44,7 +46,7 @@
 <?php }?>
     
     </div>
-
+ </div>
   <div class="container" id="reassurance-bloc">
     <div class="row">
       
@@ -79,6 +81,7 @@
     </div>
   </div>
 
+  
 </div>  
 
   
