@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <?php
-include("bdd.php");
-include("menu.php");
+include_once("bdd.php");
 // on teste si le visiteur a soumis le formulaire
 if (isset($_POST['register']) && $_POST['register'] == 'Register') {
  $values=array();
@@ -40,8 +39,6 @@ else{
 			$req=$bdd->prepare($con);
 			$req->execute();
 			echo "Inscription réussie";
-			$_SESSION['ok']=1;
-			header('Location: redirect-register.php');
 			}
 			else{
 			echo "Le mail est déjà utilisé";
@@ -64,7 +61,7 @@ else{
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/register.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -74,39 +71,58 @@ else{
 
 
   <?php  include("menu.php") ?>
-<div class="container">
-    <div class="jumbotron">
-      <p>Veullez remplir tous les champs ci-dessous afin de procéder a votre inscription.</p>
-    </div>
-  </div>
+  
 
 <div class="container">
+  <div id="message-inscription" class="panel panel-info">
+  <div class="panel-heading">
+	<h3 class="panel-title">Inscription</h3>
+  </div>
+  <div class="panel-body">
+	<p>Veullez remplir tous les champs ci-dessous afin de procéder a votre inscription.</p>
+  </div>
+  </div>
+</div>
+
+<div id="champs" class="container">
 <form class="navbar-form navbar-left" role="search" action="register.php" method="post">
     <div class="form-group">
-        <input type="text" class="form-control" name="nom" placeholder="Nom" required>
+	
+        <input type="text" class="form-control" name="nom" placeholder="Nom">
         <br><br>
-        <input type="text" class="form-control" name="prenom" placeholder="Prénom" required>
+		
+        <input type="text" class="form-control" name="prenom" placeholder="Prénom">
         <br><br>
-        <input type="date" class="form-control" name="naissance" placeholder="Date de naissance" required>
+		
+        <input type="date" class="form-control" name="naissance" placeholder="Date de naissance">
         <br><br>
+		
 		<!--<input type="text" class="form-control" name="sexe" placeholder="Sexe">-->
+		
 		<select name="sexe" id="sexe">
 		<option value="homme" selected>Homme</option>
 		<option value="femme">Femme</option>
 		</select>
         <br><br>
-        <input type="text" class="form-control" name="adresse" placeholder="Adresse" required>
+		
+        <input type="text" class="form-control" name="adresse" placeholder="Adresse">
         <br><br>
-        <input type="text" class="form-control" name="ville" placeholder="Ville" required>
+		
+        <input type="text" class="form-control" name="ville" placeholder="Ville">
         <br><br>
-        <input type="number" min="1" max="99999" class="form-control" name="cp" placeholder="Code Postal" required>
+		
+        <input type="number_format" class="form-control" name="cp" placeholder="Code Postal">
         <br><br>
-        <input type="email" class="form-control" name="email" placeholder="Mail" required>
+		
+        <input type="email" class="form-control" name="email" placeholder="Mail">
         <br><br>
-        <input type="password" class="form-control" name="mdp" placeholder="Mot de passe" required>
+		
+        <input type="password" class="form-control" name="mdp" placeholder="Mot de passe">
         <br><br>
-        <input type="password" class="form-control" name="mdpconfirm" placeholder="Confirmez votre Mot de Passe" required>
-    <br><br>
+		
+        <input type="password" class="form-control" name="mdpconfirm" placeholder="Confirmez votre Mot de Passe">
+		<br><br>
+		
         <button type="submit" name="register" class="btn btn-default" value="Register">Submit</button>
     </div>
 </form>
